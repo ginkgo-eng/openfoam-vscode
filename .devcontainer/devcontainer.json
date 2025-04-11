@@ -9,7 +9,14 @@
 
 	// Takes the current workspace folder and binds it to the target location. Gives access to workspace files from devcontainer.
 	"workspaceMount": "source=${localWorkspaceFolder},target=/workspace/openfoam-cfd,type=bind",
-	"workspaceFolder": "/workspace/openfoam-cfd"
+	"workspaceFolder": "/workspace/openfoam-cfd",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"zhikui.vscode-openfoam"
+			]
+		}
+	}
 
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
